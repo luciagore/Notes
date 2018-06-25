@@ -1,11 +1,5 @@
-(function(exports) {
-  function testNewNote() {
-    var note = new Note();
-
-    if (note.body !== 10) {
-      throw new Error("Circle size is not 10");
-    }
-  };
-
-  testNewNote();
-})(this);
+function testNewNote() {
+  var note = new Note("My favourite language is Javascript");
+  assert.isTrue(note.text == "My favourite language is Javascript");
+};
+testNewNote();

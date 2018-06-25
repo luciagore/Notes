@@ -1,7 +1,10 @@
 (function(exports) {
-  function Note() {
-    this.body = 10;
+  function Note(text) {
+    this.text = text;
+    return this.text
   };
 
   exports.Note = Note;
 })(this);
+
+console.log(Note("My favourite language is Javascript"));
