@@ -1,8 +1,8 @@
 (function(exports){
   function testNoteList() {
     var notelist = new NoteList();
-    notelist.addNote("note")
-    assert.isIncluded("note", notelist.viewNotes())
+    notelist.addNote('note')
+    assert.isTrue(notelist.viewNotes()[0].showText() == "note")
 
   };
   testNoteList();
