@@ -6,7 +6,7 @@ var assert = {
   },
   isIncluded: function(note, notelist) {
     if(!notelist.includes(note)){
-      throw new Error("Assertion failed: " + x + " is not truthy");
+      throw new Error("Assertion failed: " + notelist + " is not truthy");
     }
   }
 };
