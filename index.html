@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+
 <html>
-
-
+<html lang="en">
+<meta charset="utf-8">
+<title>title</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
 <head>
     <script src="./spec/assert.js"></script>
     <script src="./lib/note-model.js"></script>
@@ -14,18 +17,21 @@
 </head>
 <body>
 
-<h1>Notes:</h1>
+  <h1>Notes:</h1>
 
-<ul>
-  <li>First note</li>
-  <li>Second note</li>
-</ul>
+  <ul>
+    <li>First note</li>
+    <li>Second note</li>
+  </ul>
 
-<div id="app">hello</div>
+  <div id="app">
+    <p>hello</p>
+  </div>
 
-<textarea rows="4" cols="20" placeholder="New Note:"></textarea>
-<br>
-<button>Add</button>
+  <textarea rows="4" cols="20" placeholder="New Note:"></textarea>
+  <br>
+  <button>Add</button>
+  <script src="./lib/note-controller.js"></script>
 
 </body>
 </html>
