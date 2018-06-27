@@ -13,25 +13,7 @@
     results = noteListView.returnhtmlString();
     // results = noteListView.returnhtmlString();
     assert.isTrue(results == '<ul><li><div>Text</div></li><li><div>Text2</div></li></ul>')
-
   };
   testNoteListView();
   exports.testNoteListView = testNoteListView;
 })(this);
-
-// (function(exports){
-//
-//   function testMultipleNoteListView() {
-//
-//     var notelist = new NoteList();
-//     notelist.addNote("Text");
-//     notelist.addNote("Text1");
-//     var multipleNoteListView = new NoteListView(notelist);
-//     results = multipleNoteListView.htmlString();
-//     console.log(results)
-//     assert.isTrue(results == '<ul><li><div>Text</div></li><li><div>Text1</div></li></ul>')
-//
-//   };
-//   testMultipleNoteListView();
-//   exports.testMultipleNoteListView = testMultipleNoteListView;
-// })(this);
