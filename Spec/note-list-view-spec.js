@@ -17,3 +17,18 @@
   testNoteListView();
   exports.testNoteListView = testNoteListView;
 })(this);
+
+(function(exports){
+
+  function testNoteListViewSlice20() {
+    var noteList = new NoteList();
+    noteList.addNote("Text that is longer than 20 characters");
+    var noteListView = new NoteListView(noteList);
+    results = noteListView.returnhtmlString();
+    // results.sliceat20();
+    assert.isTrue(results == '<ul><li><div>Text that is longer </div></li></ul>')
+
+  };
+  testNoteListViewSlice20();
+  exports.testNoteListViewSlice20 = testNoteListViewSlice20;
+})(this);

@@ -1,10 +1,10 @@
 (function(exports) {
   function testNoteController() {
-    function NotelistDouble() {};
-    NotelistDouble.prototype = {
+    function NoteListDouble() {};
+    NoteListDouble.prototype = {
       addNote: function() {}
     }
-    var notelistdouble = new NotelistDouble;
+    var notelistdouble = new NoteListDouble;
     var notecontroller = new NoteController(notelistdouble);
     notecontroller.view.returnhtmlString = function () {
       return "<ul><li><div>Test</div></li></ul>";
